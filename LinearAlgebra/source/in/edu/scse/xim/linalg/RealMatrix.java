@@ -11,12 +11,12 @@ public interface RealMatrix extends AnyMatrix{
 	public RealMatrix createMatrix(int rowDimension, int columnDimension);
 	public RealMatrix add(RealMatrix m);
 	public RealMatrix multiply(RealMatrix m);
-	double RealMatrix getEntry(int row, int column);
-	void RealMatrix setEntry(int row, int column, double value);
-	void print (int[][] matrix);
+	public double RealMatrix getEntry(int row, int column);
+	public void RealMatrix setEntry(int row, int column, double value);
+	public void print (int[][] matrix);
 }
 
- class AbstractRealMatrix implements RealMatrix{
+class AbstractRealMatrix implements RealMatrix{
     
 	public int getRowDimension(){
 		int data;
@@ -124,9 +124,9 @@ class DiagonalMatrix extends AbstractRealMatrix{
 	}
  }
  
- public class Main{
+/*public class RealDemo{
 	 public static void main (String []arg){
 		 AbstractRealMatrix mtr = new AbstractRealMatrix(rowDimension, columnDimension);
 		 
 	 }
- }
+ }*/
