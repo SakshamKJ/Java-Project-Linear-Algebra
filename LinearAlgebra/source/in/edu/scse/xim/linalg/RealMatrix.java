@@ -45,7 +45,7 @@ class AbstractRealMatrix implements RealMatrix{
 		return array1;
         
 	}
-	public void print (int[][] matrix){
+	public void print (int[][] mat){
 		
         for (int i = 0; i < mat.length; i++){
  
